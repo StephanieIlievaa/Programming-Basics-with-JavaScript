@@ -1,0 +1,10 @@
+function depositCalculator(depositImput, periodImput, percentImput) {
+let deposit = +depositImput;
+let period = +periodImput;
+let percent = +percentImput;
+
+let sum =  deposit + period * ((deposit * percent /100) / 12);
+
+console.log(sum);
+
+}

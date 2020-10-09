@@ -1,0 +1,5 @@
+function rectangleArea(a) {
+
+    let area = a * a;
+    console.log(area);
+}

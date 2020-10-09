@@ -1,0 +1,10 @@
+function birthdayParty(rent) {
+
+    let cakePrice = Number(rent) * 0.2;
+    let drinksPrice = cakePrice - (cakePrice * 0.45);
+    let animatorPrice = Number(rent) / 3;
+    
+    let total = Number(rent) + cakePrice + drinksPrice + animatorPrice;
+   
+    console.log(total);
+}

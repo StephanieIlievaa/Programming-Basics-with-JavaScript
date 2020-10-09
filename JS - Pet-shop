@@ -1,0 +1,8 @@
+function solve(dogCount, animalCount) {
+    let dogFoodPrice = dogCount * 2.5;
+    let animalFoodPrice = animalCount * 4;
+
+    let totalPrice = dogFoodPrice + animalFoodPrice;
+
+    console.log(totalPrice.toFixed(2));
+}

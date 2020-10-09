@@ -1,0 +1,6 @@
+function solve(a, b, c){
+
+let result = Number(a) / Number(b) / Number(c);
+console.log(result);
+
+}

@@ -1,0 +1,6 @@
+function solve(name, projects) {
+    let totalHours = projects * 3;
+ let result = `The architect ${name} will need ${totalHours} hours to complete ${projects} project/s.`;
+
+ console.log(result);
+}

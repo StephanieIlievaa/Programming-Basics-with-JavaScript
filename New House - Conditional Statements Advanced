@@ -1,0 +1,42 @@
+function newHouse(flowerType, flowerCount,budget) {
+ 
+    let price = 0;
+    let discount = 0;
+
+    if (flowerType == 'Roses') {
+        price = flowerCount * 5;
+        if (flowerCount > 80) {
+            discount = 0.10;
+            price = price - (price * discount);
+        }
+    } else if (flowerType == 'Dahlias') {
+        price = flowerCount * 3.80;
+        if (flowerCount > 90) {
+            discount = 0.15;
+            price = price - (price * discount);
+        }
+    } else if (flowerType == 'Tulips') {
+        price = flowerCount * 2.80;
+        if (flowerCount > 80) {
+            discount = 0.15;
+            price = price - (price * discount);
+        }
+    } else if (flowerType == 'Narcissus') {
+        price = flowerCount * 3.00;
+        if (flowerCount < 120) {
+            discount = 0.15;
+            price = price + (price * discount);
+        }
+    } else if (flowerType == 'Gladiolus') {
+        price = flowerCount * 2.50;
+        if (flowerCount < 80) {
+            discount = 0.20;
+            price = price + (price * discount);
+        }
+    }
+    if (budget >= price) {
+        console.log(`Hey, you have a great garden with ${flowerCount} ${flowerType} and ${(budget - price).toFixed(2)} leva left.`);
+    } else {
+        console.log(`Not enough money, you need ${(Math.abs(price - budget)).toFixed(2)} leva more.`);
+    }
+}

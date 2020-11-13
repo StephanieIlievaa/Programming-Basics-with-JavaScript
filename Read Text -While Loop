@@ -1,0 +1,8 @@
+function whileLoop(arrayOfStrings){
+
+    let index = 0;
+    while(arrayOfStrings[index] !== "Stop"){
+       console.log(arrayOfStrings[index]);
+       index++;
+    }
+}

@@ -1,0 +1,41 @@
+function solve(tripPrice, puzzleCount, dollCount, bearCount, minionCount, truckCount)  {
+tripPrice = Number(tripPrice);
+puzzleCount = Number(puzzleCount);
+dollCount = Number(dollCount);
+bearCount = Number(bearCount);
+minionCount = Number(minionCount);
+truckCount = Number(truckCount);
+
+let singlePuzzlePrice = 2.6;
+let singleDollPrice = 3;
+let singleBearPrice = 4.1;
+let singleMinionPrice = 8.2;
+let singleTruckPrice = 2;
+
+let toyCount = puzzleCount + dollCount + bearCount + minionCount + truckCount;
+
+let puzzlePrice = singlePuzzlePrice * puzzleCount;
+let dollPrice = singleDollPrice * dollCount;
+let bearPrice = singleBearPrice * bearCount;
+let minionPrice = singleMinionPrice * minionCount;
+let truckPrice = singleTruckPrice * truckCount;
+
+let totalPrice = puzzlePrice + dollPrice + bearPrice + minionPrice + truckPrice;
+
+if (toyCount >= 50) {
+ totalPrice = totalPrice * 0.75;
+}
+
+totalPrice = totalPrice * 0.9;
+
+if (totalPrice >= tripPrice) {
+    let remaining = totalPrice - tripPrice;
+
+    console.log(`Yes! ${remaining.toFixed(2)} lv left.` ); 
+} else { 
+    let difference = tripPrice - totalPrice;
+
+    console.log(`Not enough money! ${difference.toFixed(2)} lv needed.`);
+ }
+
+}

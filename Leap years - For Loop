@@ -1,0 +1,8 @@
+function solve(year1, year2) {
+    let startYear = Number(year1);
+    let endYear = Number(year2);
+
+    for (currentYear = startYear; currentYear <= endYear; currentYear += 4) {
+        console.log(currentYear);
+    }
+}

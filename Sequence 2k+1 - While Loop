@@ -1,0 +1,7 @@
+function k11(num) {
+    let k = 1
+    while (k <= num) {
+        console.log(k);
+        k = k * 2 + 1;
+    }
+}

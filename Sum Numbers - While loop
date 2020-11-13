@@ -1,0 +1,12 @@
+function whileLoop(inputData) {
+    let target = Number(inputData[0]);
+    let sumOfNumbers = 0;
+    let index = 1;
+
+    while(sumOfNumbers < target){
+        sumOfNumbers+= Number(inputData[index])
+       // 0+=Number('10')
+       index++;
+    }
+    console.log(sumOfNumbers);
+}

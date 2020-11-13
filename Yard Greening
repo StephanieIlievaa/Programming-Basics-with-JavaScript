@@ -1,0 +1,14 @@
+function solve(squareMetersGreened) {
+   
+   let pricePerSquareMeter = 7.61;
+ 
+ 
+
+   let currentPrice = squareMetersGreened * pricePerSquareMeter;
+   let discount = ( currentPrice * 18) / 100;
+   let finalPrice = currentPrice - discount;
+  
+   console.log(`The final price is: ${finalPrice.toFixed(2)} lv.`);
+   console.log(`The discount is: ${discount.toFixed(2)} lv.`);
+  
+  }

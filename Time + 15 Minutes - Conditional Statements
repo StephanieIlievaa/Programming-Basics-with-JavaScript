@@ -1,0 +1,21 @@
+function timePlus15Mins(hourInput, minsInput) {
+    let hour = Number(hourInput);
+    let min = Number(minsInput) + 15;
+
+    if (min >= 60) {
+        hour = hour + 1;
+        min = min - 60;
+    }
+    if (hour >= 24) {
+        hour = hour - 24;
+    }
+
+    if (min <= 9){
+       console.log(`${hour}:0${min}`);
+    } else {
+        console.log(`${hour}:${min}`);
+
+    }
+
+   
+}

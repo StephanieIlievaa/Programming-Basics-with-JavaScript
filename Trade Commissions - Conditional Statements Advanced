@@ -1,0 +1,48 @@
+function solve(city, amount) {
+    amount = Number(amount);
+    let commisionPercent = 0;
+    let commision = 0;
+
+    // Check for city
+    if (city === "Sofia") {
+        if (amount >= 0 && amount <= 500) {
+            commision = amount * 0.05;
+        } else if (amount > 500 && amount <= 1000) {
+            commision = amount * 0.07;
+        } else if (amount > 1000 && amount <= 10000) {
+            commision = amount * 0.08;
+        } else if (amount > 10000) {
+            commision = amount * 0.12;
+        }
+    }
+
+    if (city === "Varna") {
+        if (amount >= 0 && amount <= 500) {
+            commision = amount * 0.045;
+        } else if (amount > 500 && amount <= 1000) {
+            commision = amount * 0.075;
+        } else if (amount > 1000 && amount <= 10000) {
+            commision = amount * 0.1;
+        } else if (amount > 10000) {
+            commision = amount * 0.13;
+        }
+    }
+
+    if (city === "Plovdiv") {
+        if (amount >= 0 && amount <= 500) {
+            commision = amount * 0.055;
+        } else if (amount > 500 && amount <= 1000) {
+            commision = amount * 0.08;
+        } else if (amount > 1000 && amount <= 10000) {
+            commision = amount * 0.12;
+        } else if (amount > 10000) {
+            commision = amount * 0.145;
+        }
+    }
+
+    if (amount > 0 && (city === "Sofia" || city === "Varna" || city === "Plovdiv")) {
+        console.log(commision.toFixed(2));
+    } else {
+        console.log("error");
+    }
+}

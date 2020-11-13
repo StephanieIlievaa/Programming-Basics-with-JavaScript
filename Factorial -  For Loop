@@ -1,0 +1,13 @@
+function factorial(num){
+let ourNumber = Number(num);
+
+let fac = 1;
+
+for (let i = 1;  i <= ourNumber; i++){
+ fac *= i;
+ 
+
+}
+console.log(fac);
+
+}
